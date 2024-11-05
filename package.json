@@ -1,0 +1,22 @@
+{
+  "name": "jira-issue-panel-ui-kit-2",
+  "version": "1.0.38",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/**/*"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "dependencies": {
+    "@forge/api": "^4.0.0",
+    "@forge/bridge": "4.1.0",
+    "@forge/react": "10.6.1",
+    "@forge/resolver": "1.6.0",
+    "@forge/ui": "^1.11.1",
+    "react": "^18.2.0"
+  }
+}

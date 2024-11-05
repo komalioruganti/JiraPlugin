@@ -1,0 +1,28 @@
+modules:
+  jira:projectPage:
+    - key: jira-project-page
+      function: ui-and-storage
+      title: EnteamPlugin
+  function:
+    - key: ui-and-storage
+      handler: ui-and-storage.run
+    - key: product-trigger-issue
+      handler: product-trigger.run
+    - key: product-trigger-comment
+      handler: product-trigger.updateStatus
+resources:
+  - key: main
+    path: static/hello-remote-world/build
+
+permissions:
+  scopes:
+    - storage:app
+    - read:jira-work
+    - write:jira-work
+  external:
+    fetch:
+      backend: "http://api.bounceboard.ai/api/v1/test/komali"
+app:
+  runtime:
+    name: nodejs20.x
+  id: ari:cloud:ecosystem::app/fce6c75e-fabe-4793-aaba-bc237c19d142
